@@ -24,6 +24,9 @@ understanding of the nature of the tumor. Also, a professional Neurosurgeon is r
 skillful doctors and lack of knowledge about tumors makes it really challenging and time-consuming to generate reports from MRI’. So an automated system on Cloud 
 can solve this problem.
 
+### Definition
+To Detect and Classify Brain Tumor using, CNN and TL; as an asset of Deep Learning and to examine the tumor position(segmentation).
+
 ### Acknowledgements for Dataset.
 * Navoneel Chakrabarty
 * Swati Kanchan

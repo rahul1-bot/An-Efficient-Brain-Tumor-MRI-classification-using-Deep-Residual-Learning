@@ -3,7 +3,7 @@
 * Glioma Tumor 
 * Meningioma Tumor 
 * No Tumor
-* Pituitary_tumor
+* Pituitary Tumor
   
 #### dataset: https://www.kaggle.com/sartajbhuvaji/brain-tumor-classification-mri
 

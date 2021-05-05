@@ -1,4 +1,10 @@
-# brain_tumor_mri_scans
+# Brain Tumor Classification (MRI)
+### Classify MRI images into four classes:
+* Glioma Tumor 
+* Meningioma Tumor 
+* No Tumor
+* Pituitary_tumor
+  
 #### dataset: https://www.kaggle.com/sartajbhuvaji/brain-tumor-classification-mri
 
 ### Project Abstract:

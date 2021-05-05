@@ -1,5 +1,5 @@
 # brain_tumor_mri_scans
-### dataset: https://www.kaggle.com/sartajbhuvaji/brain-tumor-classification-mri
+#### dataset: https://www.kaggle.com/sartajbhuvaji/brain-tumor-classification-mri
 
 ### Project Abstract:
 A Brain tumor is considered as one of the aggressive diseases, among children and adults. Brain tumors account for 85 to 90 percent of all primary Central Nervous 
@@ -17,6 +17,10 @@ Brain Tumors are complex. There are a lot of abnormalities in the sizes and loca
 understanding of the nature of the tumor. Also, a professional Neurosurgeon is required for MRI analysis. Often times in developing countries the lack of
 skillful doctors and lack of knowledge about tumors makes it really challenging and time-consuming to generate reports from MRI’. So an automated system on Cloud 
 can solve this problem.
+
+### Acknowledgements for Dataset.
+* Navoneel Chakrabarty
+* Swati Kanchan
 
 
 

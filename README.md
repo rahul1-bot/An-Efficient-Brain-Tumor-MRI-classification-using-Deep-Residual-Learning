@@ -1,7 +1,7 @@
 # brain_tumor_mri_scans
-## dataset: https://www.kaggle.com/sartajbhuvaji/brain-tumor-classification-mri
+### dataset: https://www.kaggle.com/sartajbhuvaji/brain-tumor-classification-mri
 
-## Project Abstract:
+### Project Abstract:
 A Brain tumor is considered as one of the aggressive diseases, among children and adults. Brain tumors account for 85 to 90 percent of all primary Central Nervous 
 System(CNS) tumors. Every year, around 11,700 people are diagnosed with a brain tumor. The 5-year survival rate for people with a cancerous brain or CNS tumor is 
 approximately 34 percent for men and36 percent for women. Brain Tumors are classified as: Benign Tumor, Malignant Tumor, Pituitary Tumor, etc. 
@@ -12,7 +12,7 @@ Application of automated classification techniques using Machine Learning(ML) an
 classification. Hence, proposing a system performing detection and classification by using Deep Learning Algorithms using ConvolutionNeural Network (CNN), 
 Artificial Neural Network (ANN), and TransferLearning (TL) would be helpful to doctors all around the world.
 
-## Context:
+### Context:
 Brain Tumors are complex. There are a lot of abnormalities in the sizes and location of the brain tumor(s). This makes it really difficult for complete 
 understanding of the nature of the tumor. Also, a professional Neurosurgeon is required for MRI analysis. Often times in developing countries the lack of
 skillful doctors and lack of knowledge about tumors makes it really challenging and time-consuming to generate reports from MRI’. So an automated system on Cloud 

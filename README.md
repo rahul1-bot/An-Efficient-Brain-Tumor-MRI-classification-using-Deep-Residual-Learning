@@ -32,7 +32,7 @@ To Detect and Classify Brain Tumor using, CNN and TL; as an asset of Deep Learni
 * Swati Kanchan
 
 
-# __To DO__:
+### _To Do_:
 * Develop Website / software to deploy the model.
 * Document the Code.
 * Perform UNIT Testing and check for any potential bugs.

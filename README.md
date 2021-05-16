@@ -1,4 +1,4 @@
-# _Brain Tumor Classification (MRI)
+# _Brain Tumor Classification (MRI)_
 ### _Classify MRI images into four classes:
 * _Glioma Tumor
 * _Meningioma Tumor 

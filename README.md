@@ -31,6 +31,3 @@ _To Detect and Classify Brain Tumor using, CNN and TL; as an asset of Deep Learn
 * _Navoneel Chakrabarty_
 * _Swati Kanchan_
 
-
-### Architecture:
-![WhatsApp Image 2021-05-13 at 5 08 28 AM](https://user-images.githubusercontent.com/65220704/118059052-341d9480-b3ad-11eb-80f9-0088d8f679a5.jpeg)

@@ -1,9 +1,5 @@
 # _An Efficient Brain Tumor MRI classification using Deep Residual Learning_
 
-## _Authors_
-1) _Rahul Sawhney_
-2) _Leah Khan_
-3) _Dr. Shilpi Sharma (Associate Professor)_
   
 ## _Abstract_
 Brain tumor categorization is essential for evaluating tumors as well as determining treatment choices established on their classifications. To identify brain tumors, a variety of imaging methods are employed. Oppositely, MRI is widely utilized because of its improved image quality and the fact of matter is that it does not employ ionizing radiation. Deep learning is a subset of machine learning that lately has demonstrated exceptional performance, particularly in classification and segmentation. In this study, we used a deep residual network to classify distinct kinds of tumors which are present in brain using images datasets. The MRI scans create a massive quantity of data. The radiologist examines these scans. Meningioma, glioma and pituitary tumor are the three main categories of tumors which are present in brain. Because of the intricacies involved in brain tumors, a manual examination might be an error prone. Automated classification machine learning-based approaches have consistently outperformed manual categorization. As a result, we propose a system that performs detection as well as classification using deep residual networks based on CNN and other different models such as ResNet, AlexNet, Inception, VGG16.

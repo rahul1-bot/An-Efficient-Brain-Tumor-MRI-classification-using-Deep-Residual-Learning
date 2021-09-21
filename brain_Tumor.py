@@ -1,5 +1,4 @@
 from __future__ import annotations
-__author__: list[str] = ['Rahul Sawhney']
 
 __doc__: str = r'''
     >>> Paper Title: 

@@ -1,3 +1,4 @@
+
 from __future__ import annotations
 
 __authors__: list[str] = ['Rahul Sawhney', 'Aabha Malik', 'Shambhavi Lau', 'Sumanyu Dutta']
@@ -11,19 +12,15 @@ __authors_email__: dict[str, str] = {
 
 __license__: str = r'''
     MIT License
-
     Copyright (c) 2021 Rahul Sawhney
-
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
     in the Software without restriction, including without limitation the rights
     to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
     copies of the Software, and to permit persons to whom the Software is
     furnished to do so, subject to the following conditions:
-
     The above copyright notice and this permission notice shall be included in all
     copies or substantial portions of the Software.
-
     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
     IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
     FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -31,7 +28,6 @@ __license__: str = r'''
     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
-
 '''
 
 __doc__: str = r'''
@@ -57,7 +53,6 @@ __doc__: str = r'''
     
     >>> Paper Keywords: 
         Brain Tumor Classification, Convolutional Networks, Image Recognition, Artificial Neural Networks
-
 '''
 import warnings, os, copy, time
 from tqdm import tqdm
@@ -104,7 +99,7 @@ class TumorDataset(torch.utils.data.Dataset):
             os.path.abspath(os.path.join(meningioma_path, p)) for p in os.listdir(meningioma_path)
         ]
         no_pathList = [
-            os.path.abspath(os.path.join(no, p)) for p in os.listdir(no_path)
+            os.path.abspath(os.path.join(no_path, p)) for p in os.listdir(no_path)
         ]
         pituitary_pathList = [
             os.path.abspath(os.path.join(pituitary_path, p)) for p in os.listdir(pituitary_path)
@@ -202,10 +197,10 @@ class BasicBlock(nn.Module):
                                       stride: Optional[int] = 1, 
                                       downsample: Optional[bool] = None) -> None:
         super(BasicBlock, self).__init__()
-        self.conv1 = Utils.conv3x3(inplanes, planes, stride)
+        self.conv1 = Utils().conv3x3(inplanes, planes, stride)
         self.bn1 = nn.BatchNorm2d(planes)
         self.relu = nn.ReLU(inplace=True)
-        self.conv2 = Utils.conv3x3(planes, planes)
+        self.conv2 = Utils().conv3x3(in_planes= planes, out_planes= planes)
         self.bn2 = nn.BatchNorm2d(planes)
         self.downsample = downsample
         self.stride = stride
@@ -270,7 +265,7 @@ class ResNet(nn.Module):
         downsample = None
         if stride != 1 or self.inplanes != planes * block.expansion:
             downsample = nn.Sequential(
-                conv1x1(self.inplanes, planes * block.expansion, stride),
+                Utils().conv1x1(self.inplanes, planes * block.expansion, stride),
                 nn.BatchNorm2d(planes * block.expansion),
             )
 
@@ -451,9 +446,10 @@ if __name__.__contains__('__main__'):
         transforms.Resize(256),
         transforms.RandomCrop(256),
         transforms.RandomRotation(360),
-        transforms.RandomVerticalFlip()
-        transforms.ToTensor()
-        transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
+        transforms.RandomVerticalFlip(),
+        transforms.ToTensor(),
+        transforms.Normalize((0.5), (0.5))
+        #transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010))
     ])
 
     train_data: object = TumorDataset(
@@ -469,8 +465,8 @@ if __name__.__contains__('__main__'):
                     transform= transforms_list
     )
     
-    train_loader = torch.utils.data.DataLoader(train_data, batch_size= 10, shuffle= True)
-    test_loader = torch.utils.data.DataLoader(test_data, batch_size= 10)
+    train_loader = torch.utils.data.DataLoader(train_data, batch_size= 20, shuffle= True)
+    test_loader = torch.utils.data.DataLoader(test_data, batch_size= 20)
 
     covid_plots = TumorAnalysis(data= train_data, loader= train_loader)
     covid_plots.batchImg_display()
@@ -506,7 +502,6 @@ if __name__.__contains__('__main__'):
     image_classification_model.train_ValAcc()
     image_classification_model.train_valLoss()
     image_classification_model.confusion_matrix(class_names= categories)
-
 
 
 

@@ -1,10 +1,10 @@
 # _An Efficient Brain Tumor MRI classification using Deep Residual Learning_
 
 ## _Authors_
-* Rahul Sawhney
-* Aabha Malik 
-* Shambhavi Lau
-* Sumanyu Dutta
+* Rahul Sawhney <sup>1</sup>
+* Aabha Malik <sup>1</sup>
+* Shambhavi Lau <sup>1</sup>
+* Sumanyu Dutta <sup>1</sup>
 * Dr. Shilpi Sharma (Associate Professor)
 
 ## _Abstract_

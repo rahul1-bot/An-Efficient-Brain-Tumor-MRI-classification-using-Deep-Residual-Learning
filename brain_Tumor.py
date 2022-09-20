@@ -1,13 +1,11 @@
 
 from __future__ import annotations
 
-__authors__: list[str] = ['Rahul Sawhney', 'Aabha Malik', 'Shambhavi Lau', 'Sumanyu Dutta']
+__authors__: list[str] = ['Rahul Sawhney', 'Aabha Malik']
 
 __authors_email__: dict[str, str] = {
     'Rahul Sawhney': 'sawhney.rahulofficial@outlook.com',
-    'Shambhavi Lau': 'shambhavilau4@gmail.com',
-    'Aabha Malik': 'aabhamalik30@gmail.com',
-    'Sumanyu Dutta': 'sumanyu.dutta1@gmail.com'
+    'Aabha Malik': 'aabhamalik30@gmail.com'
 }
 
 __authors_qualifications__: dict[str, str] = {

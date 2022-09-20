@@ -3,8 +3,6 @@
 ## _Authors_
 * Rahul Sawhney <sup>1</sup>
 * Aabha Malik <sup>1</sup>
-* Shambhavi Lau <sup>1</sup>
-* Sumanyu Dutta <sup>1</sup>
 
 
 ## _Abstract_

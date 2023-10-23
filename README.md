@@ -2,7 +2,7 @@
 
 ## _Authors_
 * Rahul Sawhney <sup>1</sup>
-* Aabha Malik <sup>1</sup>
+
 
 
 ## _Abstract_
